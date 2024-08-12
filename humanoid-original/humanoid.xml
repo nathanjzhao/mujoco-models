@@ -188,7 +188,8 @@
     <exclude body1="waist_lower" body2="thigh_left"/>
   </contact>
 
-  <tendon>
+  <!-- "Tendons are not supported" for Mujoco -->
+  <!-- <tendon>
     <fixed name="hamstring_right" limited="true" range="-0.3 2">
       <joint joint="hip_y_right" coef=".5"/>
       <joint joint="knee_right" coef="-.5"/>
@@ -197,7 +198,7 @@
       <joint joint="hip_y_left" coef=".5"/>
       <joint joint="knee_left" coef="-.5"/>
     </fixed>
-  </tendon>
+  </tendon> -->
 
   <actuator>
     <motor name="abdomen_z"       gear="40"  joint="abdomen_z"/>
